@@ -12,3 +12,5 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
+
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'https://frogames.es/wp-content/uploads/2019/10/bootcamp_android.jpg', 'https://http2.mlstatic.com/adesivo-automotivo-notebook-parede-curso-engenharia-civil-D_NQ_NP_617325-MLB25430916553_032017-F.jpg');
