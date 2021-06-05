@@ -5,7 +5,6 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
 		<version>2.4.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
@@ -28,27 +27,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-=======
-		<version>2.4.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.devsuperior</groupId>
-	<artifactId>dslearnbds</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>dslearnbds</name>
-	<description>DSLearn Bootcamp</description>
-	<properties>
-		<java.version>11</java.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		</dependency>
 
 		<dependency>
@@ -56,23 +34,17 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-<<<<<<< HEAD
 
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-<<<<<<< HEAD
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		</dependency>
 	</dependencies>
 
@@ -84,8 +56,4 @@
 			</plugin>
 		</plugins>
 	</build>
-<<<<<<< HEAD
-=======
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 </project>

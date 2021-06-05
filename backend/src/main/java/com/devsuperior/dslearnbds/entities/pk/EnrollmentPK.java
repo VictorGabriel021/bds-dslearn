@@ -16,11 +16,7 @@ public class EnrollmentPK implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	@ManyToOne
 	@JoinColumn(name = "offer_id")
 	private Offer offer;

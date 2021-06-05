@@ -5,10 +5,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD
 import javax.persistence.Column;
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,7 +24,6 @@ public class Offer implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String edition;
-<<<<<<< HEAD
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant startMoment;
@@ -35,33 +31,21 @@ public class Offer implements Serializable {
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant endMoment;
 	
-=======
-	private Instant startMoment;
-	private Instant endMoment;
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	@ManyToOne
 	@JoinColumn(name = "course_id")
 	private Course course;
 	
 	@OneToMany(mappedBy = "offer")
 	private List<Resource> resources = new ArrayList<>();
-<<<<<<< HEAD
 	
 	@OneToMany(mappedBy = "offer")
 	private List<Topic> topics = new ArrayList<>();	
 	
-=======
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	public Offer() {
 	}
 
 	public Offer(Long id, String edition, Instant startMoment, Instant endMoment, Course course) {
-<<<<<<< HEAD
 		super();
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		this.id = id;
 		this.edition = edition;
 		this.startMoment = startMoment;
@@ -108,22 +92,15 @@ public class Offer implements Serializable {
 	public void setCourse(Course course) {
 		this.course = course;
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	public List<Resource> getResources() {
 		return resources;
 	}
 
-<<<<<<< HEAD
 	public List<Topic> getTopics() {
 		return topics;
 	}
 
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	@Override
 	public int hashCode() {
 		final int prime = 31;

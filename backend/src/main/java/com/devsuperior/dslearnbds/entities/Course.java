@@ -30,10 +30,7 @@ public class Course implements Serializable {
 	}
 
 	public Course(Long id, String name, String imgUri, String imgGrayUri) {
-<<<<<<< HEAD
 		super();
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		this.id = id;
 		this.name = name;
 		this.imgUri = imgUri;
@@ -99,9 +96,5 @@ public class Course implements Serializable {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-<<<<<<< HEAD
 	}
-=======
-	}	
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 }

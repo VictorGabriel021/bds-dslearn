@@ -19,11 +19,7 @@ import com.devsuperior.dslearnbds.entities.enums.ResourceType;
 @Table(name = "tb_resource")
 public class Resource implements Serializable {
 	private static final long serialVersionUID = 1L;
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -36,26 +32,16 @@ public class Resource implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "offer_id")
 	private Offer offer;
-<<<<<<< HEAD
 
 	@OneToMany(mappedBy = "resource")
 	private List<Section> sections = new ArrayList<>();
 	
-=======
-	
-	@OneToMany(mappedBy = "resource")
-	private List<Section> sections = new ArrayList<>();
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	public Resource() {
 	}
 
 	public Resource(Long id, String title, String description, Integer position, String imgUri, ResourceType type,
 			Offer offer) {
-<<<<<<< HEAD
 		super();
-=======
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		this.id = id;
 		this.title = title;
 		this.description = description;
@@ -121,13 +107,6 @@ public class Resource implements Serializable {
 		this.offer = offer;
 	}
 
-<<<<<<< HEAD
-=======
-	public List<Section> getSections() {
-		return sections;
-	}
-
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -151,9 +130,5 @@ public class Resource implements Serializable {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-<<<<<<< HEAD
 	}
-=======
-	}	
->>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 }
