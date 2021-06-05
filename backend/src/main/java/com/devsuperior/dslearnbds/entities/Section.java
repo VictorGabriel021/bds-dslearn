@@ -30,13 +30,20 @@ public class Section implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "prerequisite_id")
 	private Section prerequisite;
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	public Section() {
 	}
 
 	public Section(Long id, String title, String description, Integer position, String imgUri, Resource resource,
 			Section prerequisite) {
+<<<<<<< HEAD
 		super();
+=======
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 		this.id = id;
 		this.title = title;
 		this.description = description;

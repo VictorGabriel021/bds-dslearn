@@ -1,22 +1,31 @@
 package com.devsuperior.dslearnbds.entities;
 
+<<<<<<< HEAD
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+=======
+import java.io.Serializable;
+import java.time.Instant;
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+<<<<<<< HEAD
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+=======
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 import javax.persistence.Table;
 
 import com.devsuperior.dslearnbds.entities.pk.EnrollmentPK;
 
 @Entity
 @Table(name = "tb_enrollment")
+<<<<<<< HEAD
 public class Enrollment {
 
 	@EmbeddedId
@@ -25,16 +34,30 @@ public class Enrollment {
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant enrollMoment;
 
+=======
+public class Enrollment implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@EmbeddedId
+	private EnrollmentPK id = new EnrollmentPK();	
+	
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	private Instant enrollMoment;
+	
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant refundMoment;
 	private boolean available;
 	private boolean onlyUpdate;
+<<<<<<< HEAD
 
 	@ManyToMany(mappedBy = "enrollmentsDone")
 	private Set<Lesson> lessonsDone = new HashSet<>();
 	
 	@OneToMany(mappedBy = "enrollment")
 	private List<Deliver> deliveries = new ArrayList<>();
+=======
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	
 	public Enrollment() {
 	}
@@ -53,6 +76,7 @@ public class Enrollment {
 	public User getStudent() {
 		return id.getUser();
 	}
+<<<<<<< HEAD
 	
 	public void setStudent(User user) {
 		id.setUser(user);
@@ -66,6 +90,21 @@ public class Enrollment {
 		id.setOffer(offer);
 	}
 	
+=======
+
+	public void setStudent(User user) {
+		this.id.setUser(user);
+	}
+	
+	public Offer getOffer() {
+		return id.getOffer();
+	}
+
+	public void setOffer(Offer offer) {
+		this.id.setOffer(offer);
+	}
+
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 	public Instant getEnrollMoment() {
 		return enrollMoment;
 	}
@@ -97,6 +136,7 @@ public class Enrollment {
 	public void setOnlyUpdate(boolean onlyUpdate) {
 		this.onlyUpdate = onlyUpdate;
 	}
+<<<<<<< HEAD
 
 	public List<Deliver> getDeliveries() {
 		return deliveries;
@@ -126,4 +166,6 @@ public class Enrollment {
 			return false;
 		return true;
 	}
+=======
+>>>>>>> da3e6e6f30da63e05fbe87f55fe5492c169c3999
 }
